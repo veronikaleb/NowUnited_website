@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Now United</title>
+		<link rel="stylesheet" href="css/style.css">
+		<meta charset="UTF-8">
+        <script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/mylibs.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="header-wrap">
+				<div class="logo">
+					<h1><a href="index.html"><img src="images/logo.png"></a></h1>
+				</div>
+				<div class="menu">
+				<menu id="navbar">
+				<ul>
+					<li><a href="https://www.nowunited.com/superuniters/"><img src="images/icons/newsletter.png"></a></li>
+					<li><a href="https://www.facebook.com/NowUnited"><img src="images/icons/Facebook.png"></a></li>
+				    <li><a href="https://twitter.com/nowunitedmusic"><img src="images/icons/Twitter.png"></a></li>
+					<li><a href="https://www.youtube.com/channel/UColnnUYyz7CWjhzpF1kASnw/featured"><img src="images/icons/yt.png"></a></li>
+				    <li><a href="https://www.tiktok.com/@nowunited"><img src="images/icons/tiktok.png"></a></li>
+					<li><a href="https://www.instagram.com/accounts/login/?next=/nowunited/"><img src="images/icons/Instagram.png"></a></li>
+				</ul>
+				</menu>
+				</div>
+			</div>
+			<hr id="high_hr">
+		</header>
+		<main class="wrapMain">
+			<div class="main">
+				<article>
+				<br>
+				<h1 id="price"></h1>
+				<br>
+						<div class="slider">
+			<div class="item">
+				<div class="slideText" href=""><a href="mel_alex.html"><img src="images/nu/1.jfif" id="slider_photo"></a></div>
+			</div>
+			<div class="item">
+				<div class="slideText" href=""><a href="nour_sav.html"><img src="images/nu/2.jfif" id="slider_photo"></a></div>
+			</div>
+			<div class="item">
+				<div class="slideText" href=""><a href="josh_joalin.html"><img src="images/nu/3.jfif" id="slider_photo"></a></div>
+			</div>
+			<div class="item">
+				<div class="slideText"><a href="heyoon_sina.html"><img src="images/nu/4.jfif" id="slider_photo"></a></div>
+			</div>
+			<div class="item">
+				<div class="slideText"><a href="hina_bailey.html"><img src="images/nu/5.jfif" id="slider_photo"></a></div>
+			</div>
+			<div class="item">
+				<div class="slideText"><a href="krys_noah.html"><img src="images/nu/6.jfif" id="slider_photo"></a></div>
+			</div>
+			<div class="item">
+				<div class="slideText"><a href="any_sofya.html"><img src="images/nu/7.jfif" id="slider_photo"></a></div>
+			</div>
+			<div class="item">
+				<div class="slideText"><a href="shiv_sabina.html"><img src="images/nu/8.jfif" id="slider_photo"></a></div>
+			</div>
+			<div class="item">
+				<div class="slideText"><a href="lamar_diarra.html"><img src="images/nu/9.jfif" id="slider_photo"></a></div>
+			</div>
+			<a class="prev" onclick="minusSlide()">&#10094;</a>
+			<a class="next" onclick="plusSlide()">&#10095;</a>
+		</div>
+		 <div class="slider-dots">
+			<span class="slider-dots_item" onclick="currentxSlide(1)"></span> 
+			<span class="slider-dots_item" onclick="currentxSlide(2)"></span> 
+			<span class="slider-dots_item" onclick="currentxSlide(3)"></span> 
+			<span class="slider-dots_item" onclick="currentxSlide(4)"></span> 
+			<span class="slider-dots_item" onclick="currentxSlide(5)"></span> 
+			<span class="slider-dots_item" onclick="currentxSlide(5)"></span> 
+			<span class="slider-dots_item" onclick="currentxSlide(5)"></span>
+			<span class="slider-dots_item" onclick="currentxSlide(5)"></span> 
+			<span class="slider-dots_item" onclick="currentxSlide(5)"></span> 
+		</div>
+		<br>
+		<p id="tour_name"><b>Now United</b> - the first global pop group, formed in Los Angeles in 2017 by Idols creator Simon Fuller.
+		Originally, the group consisted of 14 members from 14 countries; but today, the group now consist of 18 members, each representing a
+		different country and nationality from around the world.</p>
+		<section class="under_photo_menu">
+							<ul>
+							<li><a href="nu_songs.html">Songs</a></li>
+							<li><a href="nu_tours.html">Tours</a></li>
+							<li><a href="nu_history.html">History</a></li>
+							<li><a href="nu_account.html">Account</a></li>
+							</ul>
+						</section>
+					<br>
+			  <script>
+				   var slideIndex = 1;
+					showSlides(slideIndex);
+					function plusSlide() {
+						showSlides(slideIndex += 1);
+					}
+					 function minusSlide() {
+						showSlides(slideIndex -= 1);  
+					}
+					 function currentxSlide(n) {
+						showSlides(slideIndex = n);
+					}
+				     function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("item");
+						var dots = document.getElementsByClassName("slider-dots_item");
+						if (n > slides.length) {
+						  slideIndex = 1
+						}
+					if (n < 1) {
+							slideIndex = slides.length
+						}
+					for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+					for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex - 1].style.display = "block";
+						dots[slideIndex - 1].className += " active";
+					}
+					  </script>
+				</article>
+			</div>
+		</main>
+	<footer>
+		<div class="footerInner">
+			<div class="copy">
+				Now United ©. All rights reserved 2017-2022
+			</div>
+			<br>
+		</div>	
+		</footer>
+	</body>
+</html>
