@@ -22,7 +22,7 @@ This website is not official; any coincidences are random 🛑
 
 Check out the website here:
 
-https://veronikaleb.github.io/nowunited/
+[https://veronikaleb.github.io/nowunited/](https://veronikaleb.github.io/NowUnited_website)
 
 🎨 Features
 
